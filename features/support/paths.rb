@@ -10,6 +10,9 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    when /the new create_request page/
+      new_create_request_path
+
     when /the new sign_up_and_sign_in page/
       new_sign_up_and_sign_in_path
 
