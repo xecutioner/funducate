@@ -1,0 +1,22 @@
+#left-column {
+	margin:20px 0 0 15px;
+	padding:0;
+	width:550px;
+	float:left;
+}
+#left-column  #left-middle, #right-column #right-middle {
+	margin-top:-5px;
+	padding:0;
+}
+#post1 .post-middle, #post2 .post-middle  {
+	margin-top:-7px;
+}
+#right-column {
+	margin:20px 15px 0 15px;
+	padding:0;
+	width:465px;
+	float:right;
+}
+#post-top-left, #post-top-right, #post-bottom-left, #post-bottom-right {
+	margin:15px 2px 0 2px;
+}

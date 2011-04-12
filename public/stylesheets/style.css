@@ -1,0 +1,493 @@
+/***************************************************/
+/***  Free Web Templates by Investintech.com Inc  **/
+/***      URI: http://www.investintech.com        **/
+/***************************************************/
+
+body {
+  background-image:url(../images/body-bg.jpg);
+  background-color:#cccccc;
+  background-repeat:repeat-x;
+  background-position:center top;
+  margin:0 auto;
+  padding:0;
+  font-family:"Trebuchet MS";
+  font-size:11px;
+  text-align:center;
+  color:#009999;
+}
+h1 {
+  font-size:30px;
+  font-weight:bold;
+  color:#feffff;
+  margin:0;
+  padding:5px 10px;
+}
+h2 {
+  font-size:24px;
+  font-weight:bold;
+  color:#333333;
+  margin:0;
+  padding:5px 0 20px 20px;
+}
+p {
+  margin:0;
+  padding:0;
+  font-size:11px;
+  text-align:justify;
+  color:#333333;
+}
+a, a:active {
+  text-decoration:underline;
+  color:#00cccc;
+}
+a:hover {
+  text-decoration:none;
+}
+.clear {
+  clear:both;
+  margin:0;
+  padding:0;
+}
+#wrapper {
+  margin:0 auto;
+  padding:0;
+  text-align:left;
+  width:1080px;
+}
+
+/**ABOVE HEADER**/
+
+#top {
+  width:100%;
+  height:83px;
+  margin:0;
+  padding:0;
+}
+#top-logo {
+  float:left;
+  width:350px;
+  margin:15px 0 20px 35px;
+  position:relative;
+}
+#top-logo  p {
+  font-family:Arial;
+  font-size:11px;
+  color:#009999;
+  margin:0;
+  padding:0;
+  position:absolute;
+  top:40px;
+  left:40px;
+}
+#top-menu {
+  float:right;
+  margin:0;
+  padding-top:20px;
+}
+#top-menu ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+#top-menu li {
+  float:left;
+  margin:0;
+  list-style:none;
+}
+#top-menu li a {
+  float:left;
+  margin:0;
+  padding:0;
+  list-style:none;
+  text-decoration:none;
+  font-size:15px;
+  padding:0 5px;
+  text-align:center;
+}
+ #top-menu li a:hover {
+  background-image:url(../images/menu-bg.png);
+  background-repeat:repeat-x;
+  color:#ffffff;
+  height:25px;
+  padding:0 5px;
+ }
+#top-menu .active {
+  background-image:url(../images/menu-bg.png);
+  background-repeat:repeat-x;
+  color:#ffffff;
+  height:25px;
+  padding:0 5px;
+}
+#top-menu .sep {
+  background-image:url(../images/menu-sep.png);
+  background-repeat:no-repeat;
+  margin:0;
+  float:left;
+  padding:0;
+  width:2px;
+  height:25px;
+}
+
+/*HEADER*/
+
+#header {
+  background:url(../images/header.jpg) no-repeat top center;
+  width:1080px;
+  height:317px;
+  position:relative;
+  margin:0;
+  padding:0;
+}
+#header h1 {
+  font-weight:normal;
+  position:absolute;
+  top:40px;
+  left:430px;
+  width:200px;
+  margin:0;
+  padding:0;
+  color:#feffff;
+  font-size:40px;
+  line-height:30px;
+}
+#header h2 {
+  display:inline;
+  line-height:32px;
+  margin:0;
+  padding:0;
+  font-size:16px;
+  color:#feffff;
+}
+#header h3 {
+  float:left;
+  margin:0 10px 0 0;
+  padding:0;
+  font-size:18px;
+  color:#feffff;
+  background-image:url(../images/product-bg.png);
+  background-repeat:no-repeat;
+  height:35px;
+  width:35px;
+  text-align:center;
+  line-height:35px;
+}
+#header p {
+  color:#feffff;
+  margin:0 0 0 45px;
+  padding:0;
+}
+#header #product1 , #product2, #product3, #product4 {
+  width:280px;
+  margin:0;
+  padding:0;
+  position:absolute;
+}
+#header #product1 {
+  top:62px;
+  left:80px;
+}
+#header #product2 {
+  top:167px;
+  left:80px;
+}
+#header #product3 {
+  top:62px;
+  left:770px;
+}
+#header #product4 {
+  top:167px;
+  left:770px;
+}
+
+/*PAGE*/
+
+#left-column {
+  margin:20px 0 0 25px;
+  padding:0;
+  width:550px;
+  float:left;
+}
+#left-column  #left-top {
+  margin:0;
+  padding:0;
+  background-image:url(../images/left-top.png);
+  background-repeat:no-repeat;
+  width:550px;
+  height:45px;
+}
+#left-column  #left-middle {
+  margin:0;
+  padding:0;
+  background-image:url(../images/left-middle.png);
+  background-repeat:repeat-y;
+}
+#left-column #left-bottom {
+  margin:-35px 0 0 0;
+  padding:0;
+  background-image:url(../images/left-bottom.png);
+  background-repeat:no-repeat;
+  width:550px;
+  height:45px;
+}
+#post1 {
+  position:relative;
+  margin:0 5px;
+  padding:0;
+}
+#post1   .post-top {
+  margin:0;
+  padding:0;
+  background-image:url(../images/post-top.png);
+  background-repeat:no-repeat;
+  width:540px;
+  height:10px;
+}
+#post1  .post-middle {
+  width:540px;
+  margin:0;
+  padding:0;
+  background-image:url(../images/post-middle.png);
+  background-repeat:repeat-y;
+}
+#post1   .post-bottom {
+  margin:0;
+  padding:0;
+  background-image:url(../images/post-bottom.png);
+  background-repeat:no-repeat;
+  width:540px;
+  height:10px;
+}
+#post1 p {
+  font-size:13px;
+  color:#333333;
+  margin:0;
+  padding:0 10px 0 20px;
+  text-align:justify;
+  line-height:150%;
+}
+#post2 {
+  position:relative;
+  margin:30px 5px 30px 5px;
+  padding:0;
+}
+#post2   .post-top {
+  margin:0;
+  padding:0;
+  background-image:url(../images/post-top.png);
+  background-repeat:no-repeat;
+  width:540px;
+  height:10px;
+}
+#post2  .post-middle {
+  width:540px;
+  margin:0;
+  padding:0;
+  background-image:url(../images/post-middle.png);
+  background-repeat:repeat-y;
+}
+#post2   .post-bottom {
+  margin:0;
+  padding:0;
+  background-image:url(../images/post-bottom.png);
+  background-repeat:no-repeat;
+  width:540px;
+  height:10px;
+}
+#post2 #sky {
+  margin:0 3px 20px 3px;
+  padding:0px 0;
+  background-image:url(../images/sky.png);
+  background-repeat:no-repeat;
+  width:534px;
+  height:206px;
+}
+#post2 h3 {
+  font-size:16px;
+  margin:0;
+  padding:15px 0 5px 25px;
+  text-align:justify;
+  line-height:150%;
+}
+#post2 p {
+  font-size:11px;
+  color:#333333;
+  margin:0;
+  padding:0 0 0 25px;
+  text-align:justify;
+  line-height:150%;
+}
+#post3 {
+  width:350px;
+  margin:0;
+  padding:0 0 10px 0;
+}
+#post3 h3 {
+  padding:0 0 0 20px;
+}
+#post3 p {
+  line-height:35px;
+  padding:0 0 0 20px;
+}
+#right-column {
+  margin:20px 25px 0 15px;
+  padding:0;
+  width:465px;
+  float:right;
+}
+#right-column  #right-top {
+  margin:0;
+  padding:0;
+  background-image:url(../images/right-top.png);
+  background-repeat:no-repeat;
+  width:465px;
+  height:45px;
+
+}
+#right-column  #right-middle {
+  margin:0;
+  padding:0;
+  background-image:url(../images/right-middle.png);
+  background-repeat:repeat-y;
+}
+#right-column #right-bottom {
+  margin:0;
+  padding:0;
+  background-image:url(../images/right-bottom.png);
+  background-repeat:no-repeat;
+  width:465px;
+  height:10px;
+}
+#right-column h1 {
+  color:#333333;
+}
+#right-column h3 {
+  font-size:16px;
+  line-height:150%;
+  margin:0;
+  padding:5px 0 5px 20px;
+  text-align:justify;
+}
+#right-column p {
+  font-size:13px;
+  color:#333333;
+  margin:0;
+  padding:0 10px 0 20px;
+  text-align:justify;
+  line-height:150%;
+}
+#post-top-left, #post-top-right {
+  background-image:url(../images/product-bg-up.png);
+  background-repeat:no-repeat;
+  width:221px;
+  height:181px;
+  float:left;
+  margin:10px 5px 0 5px;
+  padding:0;
+}
+#post-top-left p, #post-top-right p, #post-bottom-left p, #post-bottom-right p, #vehicle p {
+  margin-left:-5px;
+  font-size:12px;
+}
+#post-top-left h3, #post-top-right h3, #post-bottom-left h3, #post-bottom-right h3, #vehicle h3 {
+  margin-left:-5px;
+}
+#post-bottom-left, #post-bottom-right {
+  background-image:url(../images/product-bg-down.png);
+  background-repeat:no-repeat;
+  width:221px;
+  height:181px;
+  float:left;
+  margin:5px;
+  padding:0;
+}
+#vehicle {
+  float:left;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#vehicle p {
+  width:305px;
+}
+
+/*FOOTER*/
+
+#footer {
+  margin:20px 0 0 0;
+  padding:0;
+  background-image:url(../images/footer-bg.jpg);
+  background-repeat:repeat-x;
+  height:134px;
+  color:#ffffff;
+}
+#footer p {
+  margin:0;
+  padding:0;
+  line-height:20px;
+  font-size:12px;
+  color:#feffff;
+}
+#footer-body {
+  margin:0 auto;
+  padding:0;
+  text-align:left;
+  width:1080px;
+}
+#footer-menu {
+  float:left;
+  width:600px;
+  height:25px;
+  margin:0;
+  padding-top:20px;
+}
+#footer-menu ul {
+  float:left;
+  margin:0 0 0 20px;
+  padding:0;
+  list-style:none;
+}
+#footer-menu li {
+  float:left;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+#footer-menu li a {
+  color:#ffffff;
+  float:left;
+  margin:0;
+  padding:0;
+  list-style:none;
+  text-decoration:none;
+  font-size:14px;
+  padding:0 10px;
+  text-align:center;
+}
+ #footer-menu li a:hover {
+  color:#00cccc;
+  text-decoration:underline;
+ }
+#footer-menu .sep {
+  background-image:url(../images/menu-sep.png);
+  background-repeat:no-repeat;
+  margin:2px 0 0 0;
+  float:left;
+  padding:0;
+  width:2px;
+  height:14px;
+}
+#footer-details {
+  float:right;
+  margin:0 20px 0 0;
+  padding-top:20px;
+}
+#footer-details #contact {
+  float:left;
+  margin:0 30px 0 0;
+  padding:0;
+}
+#footer-details #copyright {
+  float:left;
+  margin:0 10px 0 0;
+  padding:0;
+}
