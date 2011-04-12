@@ -2,12 +2,12 @@ Funducate::Application.routes.draw do
 
   devise_for :people
   resources :people do
-    resource :requests do
-      resource :donations
+    resources :requests do
+      resources :donations
     end
   end
 
-  match 'requests/home' => 'request#home', :as => :request_home
+  match 'requests/home' => 'requests#home', :as => :request_home
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -58,7 +58,7 @@ Funducate::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "request#home"
+  root :to => "requests#home"
 
   # See how all your routes lay out with "rake routes"
 

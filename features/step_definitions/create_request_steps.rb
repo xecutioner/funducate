@@ -16,3 +16,7 @@ end
 Given /^I am currently on request page$/ do
   visit(request_home_path)
 end
+
+Given /^I am currently on create_request page$/ do
+  visit(new_person_request_path)
+end
