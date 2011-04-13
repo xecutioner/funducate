@@ -1,4 +1,5 @@
 class RequestsController < ApplicationController
+  before_filter :authenticate_person!, :except => [:show,:index,:home]
   def index
     @person = Person.find(params[:person_id])
     @requests = Request.all
@@ -13,10 +14,10 @@ class RequestsController < ApplicationController
   end
 
   def create
-    @person = Person.find(param[:person_id])
+    @person = Person.find(params[:person_id])
     @request = @person.requests.create(params[:request])
     if @request.save
-      redirect_to request_home_path
+      redirect_to request_home_path, :notice => "Your Request was successfully created"
     else
       render 'new'
     end
