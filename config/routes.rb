@@ -7,6 +7,10 @@ Funducate::Application.routes.draw do
     end
   end
 
+  resources :requests , :only => [:index, :show] do
+    resources :donations
+  end
+
   match 'requests/home' => 'requests#home', :as => :request_home
 
   # The priority is based upon order of creation:

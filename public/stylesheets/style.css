@@ -104,13 +104,13 @@ a:hover {
   padding:0 5px;
   text-align:center;
 }
- #top-menu li a:hover {
+#top-menu li a:hover {
   background-image:url(../images/menu-bg.png);
   background-repeat:repeat-x;
   color:#ffffff;
   height:25px;
   padding:0 5px;
- }
+}
 #top-menu .active {
   background-image:url(../images/menu-bg.png);
   background-repeat:repeat-x;
@@ -198,14 +198,18 @@ a:hover {
   top:167px;
   left:770px;
 }
+#request_button{
+  margin:0;
+  padding-top:35px;
+}
 
 /*PAGE*/
 
 #left-column {
-  margin:20px 0 0 25px;
+  margin:20px 0 0 250px;
   padding:0;
   width:550px;
-  float:left;
+
 }
 #left-column  #left-top {
   margin:0;
@@ -329,10 +333,10 @@ a:hover {
   padding:0 0 0 20px;
 }
 #right-column {
-  margin:20px 25px 0 15px;
+  margin:20px 250px 0 15px;
   padding:0;
   width:465px;
-  float:right;
+
 }
 #right-column  #right-top {
   margin:0;
@@ -463,10 +467,10 @@ a:hover {
   padding:0 10px;
   text-align:center;
 }
- #footer-menu li a:hover {
+#footer-menu li a:hover {
   color:#00cccc;
   text-decoration:underline;
- }
+}
 #footer-menu .sep {
   background-image:url(../images/menu-sep.png);
   background-repeat:no-repeat;

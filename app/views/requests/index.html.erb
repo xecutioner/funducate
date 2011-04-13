@@ -1,2 +1,16 @@
 <h1>Request#index</h1>
-<p>Find me in app/views/request/index.html.erb</p>
+<div id = "request_container">
+  <div id = "request_content">
+    <% @requests.each do |request| %>
+      <% if person_signed_in? %>
+        <%= link_to("Read All", person_request_path(@person,request)) %>
+      <% else %>
+        <%= link_to("Read All", request_path(request)) %>
+      <% end %>
+      <%= request.title %>
+      <%= request.pledged_amount %>
+      <%= request.deadline %>
+      <%= request.description %><br/>
+      <% end %>
+  </div>
+</div>

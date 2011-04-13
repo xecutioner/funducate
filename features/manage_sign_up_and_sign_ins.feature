@@ -6,6 +6,7 @@ Feature: Manage sign_up_and_sign_ins
   @javascript
   Scenario: Register new student
     Given I am currently on registration page
+    Given sleep 5 seconds
     And I fill in "Name" with "Manish"
     And I fill in "Level" with "Under Graduate"
     And I fill in "Gpa" with "3.4"
