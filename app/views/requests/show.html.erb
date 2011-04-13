@@ -1,10 +1,5 @@
-<% if person_signed_in? %>
-  <% if current_person.id == @request.person_id %>
-    <%= link_to "Edit Request Content", edit_person_request_path(@person,@request)%><br/>
-    <%= link_to "Delete Request",person_request_path(@person,@request), :method => :delete, :confirm => "Delete! Are you sure ? "%><br/>
-  <% end %>
-<% end %>
 <%= @request.title %>
 <%= @request.pledged_amount %>
 <%= @request.deadline %>
 <%= @request.description %><br/>
+<%= link_to "Donate", new_request_donation_path(@request)%>

@@ -28,3 +28,7 @@ end
 Given /^I disable confirm dialog box$/ do
   page.evaluate_script('window.confirm = function() { return true; }')
 end
+
+Given /^I Create request$/ do
+  @request = @person.requests.create!(:title => "I want to be a MITian", :pledged_amount => "$100000", :deadline => "10/12/2013", :description => "Kathmandu")
+end

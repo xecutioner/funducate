@@ -6,7 +6,6 @@ Feature: Manage sign_up_and_sign_ins
   @javascript
   Scenario: Register new student
     Given I am currently on registration page
-    Given sleep 5 seconds
     And I fill in "Name" with "Manish"
     And I fill in "Level" with "Under Graduate"
     And I fill in "Gpa" with "3.4"
@@ -17,7 +16,6 @@ Feature: Manage sign_up_and_sign_ins
     And I fill in "Password confirmation" with "secret"
     And I press "Sign up"
     Then 1 user should exist
-    And sleep 15 seconds
     And I should see "Welcome! You have signed up successfully"
 
   @javascript

@@ -3,10 +3,15 @@
   <div id = "request_content">
     <% @requests.each do |request| %>
       <% if person_signed_in? %>
-        <%= link_to("Read All", person_request_path(@person,request)) %>
+        <% if current_person.id == request.person_id %>
+          <%= link_to "Edit Request Content", edit_person_request_path(@person,request) %><br/>
+          <%= link_to "Delete Request",person_request_path(@person,request), :method => :delete, :confirm => "Delete! Are you sure ? "%><br/>
+          <%= link_to("Read All", person_request_path(@person,request)) %>
+        <% end %>
       <% else %>
         <%= link_to("Read All", request_path(request)) %>
       <% end %>
+
       <%= request.title %>
       <%= request.pledged_amount %>
       <%= request.deadline %>

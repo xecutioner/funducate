@@ -5,7 +5,8 @@ class Request < ActiveRecord::Base
 
   validates :title, :presence => true
   validates :pledged_amount, :presence => true
-  validates_date :deadline, :presence => true,:on_or_after =>:today
+  validates :deadline, :presence => true
+  validates_date :deadline, :on_or_after =>:today
   validates :description, :presence => true
   after_initialize :set_date
 

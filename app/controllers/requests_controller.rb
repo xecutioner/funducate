@@ -8,12 +8,7 @@ class RequestsController < ApplicationController
   end
 
   def show
-    if person_signed_in?
-      @person = Person.find(params[:person_id])
-      @request = @person.requests.find(params[:id])
-    else
       @request = Request.find(params[:id])
-    end
   end
 
   def new
@@ -25,9 +20,9 @@ class RequestsController < ApplicationController
     @person = Person.find(params[:person_id])
     @request = @person.requests.create(params[:request])
     if @request.save
-      redirect_to request_home_path, :notice => "Your Request was successfully created"
+      redirect_to homepage_path, :notice => "Your Request was successfully created"
     else
-      render 'new'
+      render 'new', :alert => "OOPS!!! something went wrong, Try Again !!!"
     end
   end
 

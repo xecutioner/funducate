@@ -10,6 +10,9 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    when /the new donation page/
+      new_donation_path
+
     when /the new edit_and_delete_request page/
       new_edit_and_delete_request_path
 

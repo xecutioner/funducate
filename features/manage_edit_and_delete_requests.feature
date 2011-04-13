@@ -8,7 +8,6 @@ wants to edit and delete request of that Person
     Given I am authenticated
     Given I Create request
     And I am currently on request_index page
-    And I follow "Read All"
     And I follow "Edit Request Content"
     Then I fill in "Title" with "Tested Title"
     And I press "Update Request"
@@ -18,6 +17,5 @@ wants to edit and delete request of that Person
     Given I am authenticated
     Given I Create request
     And I am currently on request_index page
-    And I follow "Read All"
     And I disable confirm dialog box
     And I follow "Delete Request"

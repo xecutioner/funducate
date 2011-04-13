@@ -21,14 +21,6 @@ Given /^I am currently on create_request page$/ do
   visit(new_person_request_path(@person))
 end
 
-# Given /^I am authenticated$/ do
-#   visit new_person_session_path
-#   @person = Person.create!(:name => "Kapil", :level => "Undergraduate", :gpa => "3.5", :address => "Kathmandu", :dob => "12/12/2010", :email => "kapil@a.com", :password => "secret")
-#   fill_in "Email", :with => "kapil@a.com"
-#   fill_in "Password", :with => "secret"
-#   click_button "Sign in"
-# end
-
 Then /^(\d+) request should exist$/ do |arg1|
   Request.count.should == 1
 end
