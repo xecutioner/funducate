@@ -1,0 +1,28 @@
+#top
+  #top-logo= link_to(image_tag("logo.jpg", :border  => 0),homepage_path)
+  #top-menu
+    %ul
+      %li
+        %a.active{:href => "#"} Home
+      %li.sep
+      %li= link_to("Requests", requests_path)
+      %li.sep
+      %li
+        %a{:href => "#"} Product
+      %li.sep
+      %li
+        %a{:href => "#"} Services
+      %li.sep
+      %li
+        %a{:href => "#"} Partners
+      %li.sep
+      %li
+        %a{:href => "#"} Product
+      %li.sep
+      %li
+        %a{:href => "#"} Contact
+  #request_button
+    - if person_signed_in?
+      = link_to(image_tag("request_scholarship_button.jpg", :border => 0), new_person_request_path(current_person))
+    - else
+      = link_to(image_tag("request_scholarship_button.jpg", :border => 0), new_person_registration_path)

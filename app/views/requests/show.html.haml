@@ -1,0 +1,17 @@
+.request
+  .request_show
+    = render 'request'
+  .requester_info
+    - requester = get_requester_info(@request)
+    %p
+      Name :#{requester.name}
+    %p
+      Level :#{requester.level}
+    %p
+      Email :#{requester.email}
+  .request_information
+    = render 'request_informations'
+    = link_to(image_tag("donate.jpg"), new_request_donation_path(@request), :id => "donate")
+= render 'comments/show'
+#comment_form
+  = render('comments/form')

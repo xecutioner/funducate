@@ -1,0 +1,13 @@
+#request_container
+  - @requests.each do |request|
+    .request_content
+      .request_info
+        %p
+          Funded:#{get_funded_amount(request)}
+        %p= request.pledged_amount
+        %p= request.deadline
+      .request_details
+        %p= request.title
+        %p= request.description
+        %p= link_to(image_tag('button-more.png'), request_path(request),:id =>"Read_more")
+  = will_paginate @requests

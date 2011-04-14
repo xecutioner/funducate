@@ -1,0 +1,11 @@
+#comment
+  - @request.comments.all.each do |comment|
+    .comment_each
+      %p.comment_name
+        %b Commented By:
+        = comment.name
+      %p.comment_body
+        %b Comment:
+        = comment.body
+      %p.comment_time
+        = comment.created_at.to_formatted_s(:short)
