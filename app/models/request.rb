@@ -1,5 +1,7 @@
 class Request < ActiveRecord::Base
 
+  cattr_reader :per_page  # FOR: pagination
+  @@per_page = 3
 
   belongs_to :person
   has_many :donations
@@ -22,10 +24,4 @@ class Request < ActiveRecord::Base
     self.where("deadline >= '#{Date.today}'").find(:all,:order =>'deadline',:limit=>5)
   end
 
-  def self.get_all_requests
-        self.where("deadline >= '#{Date.today}'").find(:all,:order =>'deadline')
-        #self.paginate :page => params[:page], :order => 'created_at DESC'
-  end
-
 end
-
