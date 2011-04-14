@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110412075835) do
+ActiveRecord::Schema.define(:version => 20110413102219) do
+
+  create_table "comments", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "request_id"
+  end
 
   create_table "donations", :force => true do |t|
     t.string   "donor_email"

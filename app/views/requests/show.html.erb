@@ -1,5 +1,22 @@
-<%= @request.title %>
-<%= @request.pledged_amount %>
-<%= @request.deadline %>
-<%= @request.description %><br/>
-<%= link_to "Donate", new_request_donation_path(@request)%>
+
+<div class = "request">
+  <div class = 'request_show'>
+    <%= render 'request'%>
+  </div>
+  <div class = "requester_info">
+    <% requester = get_requester_info(@request) %>
+    <p>Name :<%= requester.name%></p>
+    <p>Level :<%= requester.level%></p>
+    <p>Email :<%= requester.email%></p>
+  </div>
+  <div class = "request_information">
+    <%= render 'request_informations'%>
+    <%= link_to(image_tag("donate.jpg"), new_request_donation_path(@request), :id => "donate")%>
+  </div>
+</div>
+
+
+ <%= render 'comments/show'%>
+<div id="comment_form">
+  <%= render('comments/form')%>
+</div>

@@ -1,10 +1,11 @@
 class RequestsController < ApplicationController
   before_filter :authenticate_person!, :except => [:show,:index,:home]
+  cattr_reader :per_page  # FOR: pagination
+   @@per_page = 3
+
   def index
-    if person_signed_in?
-      @person = Person.find(params[:person_id])
-    end
-    @requests = Request.all
+    @requests = Request.get_all_requests.paginate :page =>params[:page]
+    #@requests = @r.paginate :page => params[:page]
   end
 
   def show

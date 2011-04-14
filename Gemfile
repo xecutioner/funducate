@@ -21,6 +21,7 @@ gem 'database_cleaner'
 gem 'ffaker'
 gem 'haml', :git => 'git://github.com/nex3/haml.git'
 gem 'haml-edge'
+gem "will_paginate", "~> 3.0.pre2"
 # Use unicorn as the web server
 # gem 'unicorn'
 

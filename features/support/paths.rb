@@ -10,6 +10,9 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
+    when /the new comments page/
+      new_comments_path
+
     when /the new donation page/
       new_donation_path
 

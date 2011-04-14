@@ -1,6 +1,6 @@
 class HomesController < ApplicationController
   def index
-    @requests = Request.all
+    @needy_requests = Request.get_needy_requests
   end
 
 end

@@ -29,3 +29,8 @@ Given /^A request is created$/ do
   click_button "Sign in"
   @request = @person.requests.create!(:title => "I want to be a MITian", :pledged_amount => "$100000", :deadline => "10/12/2013", :description => "Kathmandu")
 end
+
+When /^I follow image link "([^"]*)"$/ do |arg1|
+  find(:xpath, "//img[@alt = '#{img_alt}']/parent::a").click()
+end
+

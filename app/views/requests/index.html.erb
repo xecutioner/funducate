@@ -1,21 +1,26 @@
-<h1>Request#index</h1>
 <div id = "request_container">
-  <div id = "request_content">
     <% @requests.each do |request| %>
-      <% if person_signed_in? %>
-        <% if current_person.id == request.person_id %>
-          <%= link_to "Edit Request Content", edit_person_request_path(@person,request) %><br/>
-          <%= link_to "Delete Request",person_request_path(@person,request), :method => :delete, :confirm => "Delete! Are you sure ? "%><br/>
-          <%= link_to("Read All", person_request_path(@person,request)) %>
-        <% end %>
-      <% else %>
-        <%= link_to("Read All", request_path(request)) %>
-      <% end %>
+      <%# if person_signed_in? %>
+        <%# if current_person.id == request.person_id %>
+          <%#= link_to "Edit Request Content", edit_person_request_path(@person,request) %>
+          <%#= link_to "Delete Request",person_request_path(@person,request), :method => :delete, :confirm => "Delete! Are you sure ? "%>
+          <%#= link_to("Read All", person_request_path(@person,request)) %>
+        <%# end %>
+      <%# else %>
 
-      <%= request.title %>
-      <%= request.pledged_amount %>
-      <%= request.deadline %>
-      <%= request.description %><br/>
+      <%# end %>
+      <div class = "request_content">
+        <div class = "request_info">
+          <p>Funded:<%= get_funded_amount(request) %></p>
+          <p><%= request.pledged_amount %></p>
+          <p><%= request.deadline %></p>
+        </div>
+        <div class = "request_details">
+          <p><%= request.title %></p>
+          <p><%= request.description %></p>
+          <p><%= link_to(image_tag('button-more.png'), request_path(request),:id =>"Read_more") %></p>
+        </div>
+      </div>
       <% end %>
-  </div>
+      <%= will_paginate @requests %>
 </div>

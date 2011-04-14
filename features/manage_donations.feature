@@ -7,9 +7,9 @@ Feature: Manage donations
   Scenario: create new donation
     Given A request is created
     Given I am currently on the home page
-    Given sleep 5 seconds
-    And I follow "Read All"
-    And I follow "Donate"
+    When I follow "Requests"
+    And I follow "Read_more"
+    And I follow "donate"
     And I fill in "Donor email" with "donor@email.com"
     And I fill in "Donor name" with "Donor"
     And I fill in "Payment type" with "Credit Card"

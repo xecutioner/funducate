@@ -1,12 +1,3 @@
-<h1>Home</h1>
-<div id = "request_container">
-  <div id = "request_content">
-    <% @requests.each do |request| %>
-      <%= link_to("Read All", request_path(request)) %>
-      <%= request.title %>
-      <%= request.pledged_amount %>
-      <%= request.deadline %>
-      <%= request.description %><br/>
-      <% end %>
-  </div>
-</div>
+<%= render 'shared/left' %>
+<%= render 'shared/right'%>
+<div class = 'clear'></div>

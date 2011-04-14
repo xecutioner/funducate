@@ -1,5 +1,4 @@
 class DonationsController < ApplicationController
-
   def new
     @request = Request.find(params[:request_id])
     @donation = @request.donations.new
@@ -14,5 +13,4 @@ class DonationsController < ApplicationController
       render 'new', :alert => "OOPS!!! something went wrong, Try Again !!!"
     end
   end
-
 end

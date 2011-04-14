@@ -1,3 +1,83 @@
 .welcome_message {
   height:90px;
 }
+.request_content{
+  height:100px;
+  width:700px;
+  margin:10px 0 10px 200px ;
+  border-bottom:2px #888 solid;
+  padding:20px;
+  text-align:center;
+  -moz-box-shadow: 20px 25px 20px #888;
+  -webkit-box-shadow: 20px 25px 20px #888;
+  box-shadow: 20px 25px 20px #888;
+}
+img {
+  border:none;
+}
+.request_info{
+  float:left;
+  border-right:silver 2px solid;
+  width:110px;
+  overflow:hidden;
+}
+.request_details{
+  float:left;
+  margin:20px;
+  width:500px;
+}
+.request_details p{
+  font-size:15px;
+}
+.request_info p{
+  font-size:15px;
+}
+#request_container{
+  height:500px;
+}
+.request_show{
+  float:left;
+  width:500px;
+}
+.request_title{
+  margin:20px;
+  text-align:center;
+  font-size:25px;
+  text-decoration:underline;
+}
+.request_description{
+  font-size:20px;
+}
+.request_information{
+  margin-top:20px;
+  padding:10px;
+
+}
+.request_information p{
+  font-size:15px;
+}
+.requester_info{
+
+  border-left:#cab 2px groove ;
+  margin:50px 0 0 530px;
+  padding:5px;
+  height:250px;
+}
+.requester_info p {
+  font-size:20px;
+  margin-left:10px;
+  margin-top:40px;
+}
+.request{
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 5px 15px 100px #888;
+  -webkit-box-shadow: 5px 15px 100px #888;
+  box-shadow: 5px 15px 100px #888;
+  margin-left:200px;
+  width:800px;
+}
+#comment_form{
+  margin-left:300px;
+}

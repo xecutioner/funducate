@@ -1,12 +1,17 @@
 Funducate::Application.routes.draw do
 
+  get "comment/new"
+
+  get "comment/create"
+
   devise_for :people
   resources :people do
     resources :requests
   end
 
-  resources :requests  do
+  resources :requests do
     resources :donations
+    resources :comments
   end
 
   match 'homes/index' => 'homes#index', :as => :homepage

@@ -6,5 +6,6 @@ describe Request do
   it { should validate_presence_of :deadline }
   it { should validate_presence_of :description }
   it { should have_many :donations }
+  it { should have_many :comments }
   it { should belong_to :person }
 end

@@ -391,6 +391,12 @@ a:hover {
 #post-top-left p, #post-top-right p, #post-bottom-left p, #post-bottom-right p, #vehicle p {
   margin-left:-5px;
   font-size:12px;
+  overflow:hidden;
+}
+#post-top-left a img, #post-top-right a img, #post-bottom-left a img, #post-bottom-right a img, #vehicle a img {
+  border:none;
+  float:left;
+  margin:0 0 0 110px;"
 }
 #post-top-left h3, #post-top-right h3, #post-bottom-left h3, #post-bottom-right h3, #vehicle h3 {
   margin-left:-5px;
