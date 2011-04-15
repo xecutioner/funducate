@@ -143,3 +143,9 @@ img {
 .pagination a, em{
   font-size:15px;
 }
+.alert{
+  color:red;
+}
+.notice{
+  color:black;
+}
