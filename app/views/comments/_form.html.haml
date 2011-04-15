@@ -1,15 +1,15 @@
 = form_for([@request,@request.comments.build], :remote => true) do |form|
   %p.show_details
-    = form.label :name, "Name"
+    = form.label :name, "Name", :id => "name"
     %br/
     = form.text_field :name
   %p.show_details
-    = form.label :body, "Comment"
-    %br/
-    = form.text_area :body
-  %p.show_details
-    = form.label :email, "Email"
+    = form.label :email, "Email", :id => "email"
     %br/
     = form.text_field :email
+  %p.show_details
+    = form.label :body, "Comment", :id => "comment"
+    %br/
+    = form.text_area :body,:rows => 6
   %p.show_details
     = form.submit

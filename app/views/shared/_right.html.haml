@@ -6,7 +6,7 @@
       %div{:id => cycle("first","post-top-left", "post-top-right", "post-bottom-left", "post-bottom-right")}
         %h3= request.title
         %p
-          = request.description
+          = request.description.truncate(150)
           = link_to(image_tag('button-more.png', :border => 0), request_path(request))
     .clear
   #right-bottom

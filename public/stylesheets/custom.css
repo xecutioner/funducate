@@ -81,3 +81,65 @@ img {
 #comment_form{
   margin-left:300px;
 }
+.main_container{
+  margin:0 0 0 100px;
+  width:1074px;
+  overflow:hidden;
+}
+#person_new p{
+  text-align:center;
+}
+#sign_up_form{
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 5px 15px 100px #888;
+  -webkit-box-shadow: 5px 15px 100px #888;
+  box-shadow: 5px 15px 100px #888;
+  margin:10px 350px 10px 350px;
+  text-align:center;
+}
+.content_container{
+  height:500px;
+}
+.sign_in{
+  -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   -moz-box-shadow: 5px 15px 100px #888;
+   -webkit-box-shadow: 5px 15px 100px #888;
+   box-shadow: 5px 15px 100px #888;
+   margin:10px 350px 10px 350px;
+   text-align:center;
+}
+#comment_container{
+
+  margin-left:250px;
+  width:700px;
+}
+#comment{
+  margin:10px;
+}
+.comment_each {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 5px 15px 100px #888;
+  -webkit-box-shadow: 5px 15px 100px #888;
+  box-shadow: 5px 15px 100px #888;
+  margin-top:14px;
+  padding:10px;
+}
+.form_fields{
+  margin:20px 250px 20px 300px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 5px 15px 100px #888;
+  -webkit-box-shadow: 5px 15px 100px #888;
+  box-shadow: 5px 15px 100px #888;
+  width:800px;
+}
+.pagination a, em{
+  font-size:15px;
+}

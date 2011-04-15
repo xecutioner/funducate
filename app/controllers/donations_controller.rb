@@ -8,6 +8,7 @@ class DonationsController < ApplicationController
     @request = Request.find(params[:request_id])
     @donation = @request.donations.create(params[:donation])
     if @donation.save
+      StudentMailer.welcome_email(@request,@donation).deliver
       redirect_to homepage_path, :notice => "You Have successfully Donated, An Email has been sent to student"
     else
       render 'new', :alert => "OOPS!!! something went wrong, Try Again !!!"

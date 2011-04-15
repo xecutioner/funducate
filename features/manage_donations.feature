@@ -10,10 +10,10 @@ Feature: Manage donations
     When I follow "Requests"
     And I follow "Read_more"
     And I follow "donate"
+    When I select "Visa" from "Payment type"
     And I fill in "Donor email" with "donor@email.com"
     And I fill in "Donor name" with "Donor"
-    And I fill in "Payment type" with "Credit Card"
-    And I fill in "Card number" with "0123456789"
+    And I fill in "Card number" with "0123456789123456"
     And I fill in "Donated amount" with "420"
     And I press "Create Donation"
     Then 1 donation should exist

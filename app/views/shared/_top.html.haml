@@ -2,25 +2,19 @@
   #top-logo= link_to(image_tag("logo.jpg", :border  => 0),homepage_path)
   #top-menu
     %ul
-      %li
-        %a.active{:href => "#"} Home
+      %li= link_to("Home", homepage_path)
       %li.sep
       %li= link_to("Requests", requests_path)
       %li.sep
       %li
-        %a{:href => "#"} Product
-      %li.sep
-      %li
-        %a{:href => "#"} Services
-      %li.sep
-      %li
-        %a{:href => "#"} Partners
-      %li.sep
-      %li
-        %a{:href => "#"} Product
-      %li.sep
-      %li
-        %a{:href => "#"} Contact
+        - if person_signed_in?
+          %p
+          Welcome #{current_person.email} #{link_to "Sign Out", destroy_person_session_path}
+          %p
+          - else
+          %p
+          #{link_to "Sign In", new_person_session_path}
+          %p
   #request_button
     - if person_signed_in?
       = link_to(image_tag("request_scholarship_button.jpg", :border => 0), new_person_request_path(current_person))

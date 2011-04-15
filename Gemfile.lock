@@ -194,6 +194,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionmailer
   capybara
   cucumber-rails
   database_cleaner

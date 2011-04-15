@@ -1,2 +1,2 @@
 $(".<%= @message["type"] %>").html("<%= @message["text"] %>");
-$('#comment').append("<p class = 'comment_time'><b>Commented By:</b><%= @comment.name %></p><p class = 'comment_time'><b>Comment:</b><%= @comment.body %></p><p class = 'comment_time'><%= @comment.created_at.to_formatted_s(:short) %></p>");
+$('#comment').append("<div class = 'comment_each'><p class = 'comment_time'><b>Commented By:</b><%= @comment.name %></p><p class = 'comment_time'><b>Comment:</b><%= @comment.body %></p><p class = 'comment_time'><%= @comment.created_at.to_formatted_s(:short) %></p></div>");

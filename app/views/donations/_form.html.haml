@@ -1,4 +1,5 @@
 .form_fields
   = semantic_form_for ([@request,@donation]) do |form|
-    = form.inputs
+    =form.input :payment_type,:as=> :select,:collection => ["Visa", "PayPal", "Master-Card"]
+    = form.inputs :donor_email,:donor_name, :card_number, :donated_amount
     = form.buttons
